@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/contacts_page_style.css">
+    <title>ДЕ НАС ЗНАЙТИ</title>
+</head>
+<body class="main">
+    <div id="app">
+        <div class="content">
+            <img onclick="add_menu()" class="content__burger" src="../images/burger.svg"  alt="">
+            <img onclick="add_menu_mobi()" class="content__burger_mobi" src="../images/burger.svg" alt="ds">
+            <h1 class="content__main_title">де нас знайти</h1>
+            <div class="content__block">
+                <divi id="map" class="content__map"></divi>
+                <div class="content__title">
+                    <div class="content__sub_title">
+                        <div class="content__text">
+                            м. Тернопіль<br>
+                            проспект Злуки 4<br>
+                            +3 8 (097) 345 53 16<br>
+                            razorbarbers@gmail.com<br>
+                        </div>
+                    </div>
+                    <div class="content__networks">
+                        <div class="content__network"> 
+                        <div> <a href="https://www.facebook.com/" target="new"><img class="content__icons" src="../images/et-facebook.png" alt=""></a> <p>www.facebook.com/razor</p></div>    
+                        <div>  <a href="https://www.instagram.com/" target="new"><img class="content__icons" src="../images/instagram.png" alt=""></a><p>www.instagram.com/razor</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="burger__menu">
+            <a href="../index.html"><div class="content__menu_items">головна</div></a>
+            <a href="../pages/team_page.html"><div class="content__menu_items">про нас</div></a>
+            <a href="../pages/services_page.html"><div class="content__menu_items">послуги</div></a>
+            <a href="../pages/gallery_page.html"><div class="content__menu_items">гелерея</div></a>
+            <a href="../pages/barbers_page.html"><div class="content__menu_items">барбери</div></a>
+            <a href="../pages/price_page.html"><div class="content__menu_items">ціни</div></a>
+            <a href="../pages/contacts_page.html"><div class="content__menu_items">контакти</div></a>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+        var coordinates = {lat: 49.560727, lng: 25.616000};
+        var grayStyles = [{
+            featureType: "all",
+            stylers: [
+                { saturation: -90 },
+                { lightness: 50 }]},];
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: coordinates,});
+        var marker = new google.maps.Marker({
+              position: {lat: 49.560727, lng: 25.616000},
+              map: map,
+              title: 'RAZOR',
+          });
+        }
+    </script>
+    <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhYg7JehYdlRWBjPP6jLrMLYmLflWn9aM&callback=initMap" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

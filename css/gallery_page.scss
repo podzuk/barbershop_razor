@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/wp.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
+  .content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    height: 100vh;
+    &__burger {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 3%;
+        left: 12%;
+      z-index: 30;
+    }
+    &__burger_mobi {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 3%;
+      left: 16%;
+      z-index: 30;
+      display: none;
+    }
+      &__main_title {
+        position: absolute;
+        width: 100%;
+        padding-top: 4%;
+        margin: 0;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: Didact Gothic;
+        font-weight: 100;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+      }
+      &__slider{
+          width: 45%;
+          height: 40%;
+          position: absolute;
+          margin: auto;
+          top: 20%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+      }
+      &__slider_foto{
+        padding-top: 25%;
+        width: 30%;
+        height: 40%;
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       
+    }
+    
+&__slider1{
+  margin-left: 30px;
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+}
+}
+
+.slick-dots{
+  opacity: 0;
+}
+button{
+opacity: 0;
+}
+.slick-dots{
+  opacity: 0;
+}
+.burger__menu {
+    position: absolute;
+    width: 11%;
+    border-left: 1px solid grey;
+    bottom: 15%;
+    left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+    display: none;
+  }
+  .content__menu_items {
+    padding-top: 10%;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Didact Gothic;
+    font-size: 20px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  @media screen and(max-width: 600px) {
+    .content{
+        width: 100%; 
+    }
+  }
+  @media screen and(max-width: 1000px) {
+    .content{
+        width: 80%;
+    }
+  }
+  @media screen and(max-width: 1200px) {
+  .content{
+   width: 140%;
+   position: absolute;
+   right: -18%;
+ }
+ .content__burger {
+   top: 20px;
+ left: 140px;
+}
+
+ .content__main_title {
+   padding-top: 10%;
+ }
+ .content__slider{
+  width: 55%;
+  height: 50%;
+  top: 30%;
+}
+}
+
+@media screen and(max-width: 600px) {
+  .burger__menu {
+      position: absolute;
+      width: 100%;
+      border-left: 1px solid grey;
+      bottom: 15%;
+      left: 3%;
+      padding-top: 0.5%;
+      padding-bottom: 2%;
+      display: none;
+      box-sizing: border-box;
+      z-index: 31;
+    }   
+    .content__close{
+      display: none;
+    }
+    .content__burger {
+     display: none;
+    }
+    .content__burger_mobi {
+      top: 20px;
+      left: 140px;
+      display: block;
+    }
+}
+
+.show{
+  transition: .5s;
+  transform: scale(1);
+}
+.show2{
+  display: block;
+}
+.blue{
+  background-image: none;
+  background-color: #07101d;
+}
+.hiden{
+  transform: scale(0);
+}
