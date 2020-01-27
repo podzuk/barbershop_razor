@@ -1,189 +1,185 @@
 $(".content__team").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots: false,
-    arrows: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  dots: false,
+  arrows: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
       breakpoint: 800,
       settings: {
         slidesToShow: 1
       }
     }
   ]
-  });
+});
 
-  $(".popup").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    dots: true,
-    autoplaySpeed: 2000
-  });
+$(".popup").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots: true,
+  autoplaySpeed: 2000
+});
 
-  //if ($('.content__width').css('width') <= '700px'){
-  // $('.content__name').css({'color' : 'rgb(255, 0, 0)'});
-  //}
-  
+//if ($('.content__width').css('width') <= '700px'){
+// $('.content__name').css({'color' : 'rgb(255, 0, 0)'});
+//}
 
-  $('.content__slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.content__slider_foto'
-  });
-  $('.content__slider_foto').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.content__slider',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true,
-    responsive: [
-      {
+$(".content__slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".content__slider_foto"
+});
+$(".content__slider_foto").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".content__slider",
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
       breakpoint: 800,
       settings: {
         slidesToShow: 1
       }
     }
   ]
-  });
-    
+});
 
-  function add_menu() {
-    if ($('#menu').css('display') == 'none') 
-        { 
-            $('#menu').animate({width: 'show'}, 400); 
-        } 
-    else 
-        {     
-          $('#menu').animate({width: 'hide'}, 400); 
-        } 
+function add_menu() {
+  if ($("#menu").css("display") == "none") {
+    $("#menu").animate({ width: "show" }, 400);
+  } else {
+    $("#menu").animate({ width: "hide" }, 400);
   }
+}
 
-  function add_menu_mobi() {
-    $('#menu').animate({width: 'show'}, 400);
-    $('.content').addClass('blue')
-    $('.content').addClass('hiden')
-    $('.main').addClass('blue')
-  }
+function add_menu_mobi() {
+  $("#menu").animate({ width: "show" }, 400);
+  $(".content").addClass("blue");
+  $(".content").addClass("hiden");
+  $(".main").addClass("blue");
+}
 
-  function add_menu_main() {
-    $('.burger__menu').addClass('show') 
-    $('.main').addClass('blue')
-    $('.content__logo').addClass('hiden') 
-    $('.content__burger').addClass('hiden') 
-    $('.content__button').addClass('hiden') 
-    $('.content__footer').addClass('hiden') 
-  }
-  function add_menu_second() {
-    $('.burger__menu').addClass('show') 
-    $('.main').addClass('blue')
-    $('.content__logo').addClass('hiden') 
-    $('.content__button').addClass('hiden') 
-    $('.content__footer').addClass('hiden')  
-    $('.content__width').addClass('hiden') 
-    $('.content__data').addClass('hiden') 
-    $('.content__popup').addClass('hiden')
-  }
-  
-  function popup_burbers() {
-    $('.content__width').addClass('show') 
-    $('.content__menu').addClass('blur') 
-    $('.content__line').addClass('blur') 
-    $('.content__footer').addClass('blur') 
-    $('.content__facebook').addClass('blur') 
-    $('.content__instagram').addClass('blur') 
-    $('.content__main_title_price').addClass('blur') 
-    $('.content__button').addClass('blur') 
-  }
-  function popup_burbers_prise() {
-    $('.content__width').addClass('show') 
-    $('.content__menu').addClass('blur') 
-    $('.content__line').addClass('blur') 
-    $('.content__footer').addClass('blur') 
-    $('.content__facebook').addClass('blur') 
-    $('.content__instagram').addClass('blur') 
-    $('.content__main_title_price').addClass('blur') 
-    $('.content__button').addClass('blur') 
-    $('.content__burger').addClass('blur') 
-  }
-  function closePopup_burbers() {
-    $('.content__width').removeClass('show') 
-    $('.content__menu').removeClass('blur') 
-    $('.content__line').removeClass('blur') 
-    $('.content__footer').removeClass('blur') 
-    $('.content__facebook').removeClass('blur') 
-    $('.content__instagram').removeClass('blur') 
-    $('.content__burger').removeClass('blur') 
-    $('.content__main_title_price').removeClass('blur') 
-    $('.content__button').removeClass('blur') 
-  }
+function add_menu_main() {
+  $(".burger__menu").addClass("show");
+  $(".main").addClass("blue");
+  $(".content__logo").addClass("hiden");
+  $(".content__burger").addClass("hiden");
+  $(".content__button").addClass("hiden");
+  $(".content__footer").addClass("hiden");
+}
+function add_menu_second() {
+  $(".burger__menu").addClass("show");
+  $(".main").addClass("blue");
+  $(".content__logo").addClass("hiden");
+  $(".content__button").addClass("hiden");
+  $(".content__footer").addClass("hiden");
+  $(".content__width").addClass("hiden");
+  $(".content__data").addClass("hiden");
+  $(".content__popup").addClass("hiden");
+}
 
-  function popup_enter_andrii(){
-    $('.content__width').removeClass('show')
-    $('.content__data').addClass('show') 
-    $('.content__barbersName').val('Андрій');
+function popup_burbers() {
+  $(".content__width").addClass("show");
+  $(".content__menu").addClass("blur");
+  $(".content__line").addClass("blur");
+  $(".content__footer").addClass("blur");
+  $(".content__facebook").addClass("blur");
+  $(".content__instagram").addClass("blur");
+  $(".content__main_title_price").addClass("blur");
+  $(".content__button").addClass("blur");
+}
+function popup_burbers_prise() {
+  $(".content__width").addClass("show");
+  $(".content__menu").addClass("blur");
+  $(".content__line").addClass("blur");
+  $(".content__footer").addClass("blur");
+  $(".content__facebook").addClass("blur");
+  $(".content__instagram").addClass("blur");
+  $(".content__main_title_price").addClass("blur");
+  $(".content__button").addClass("blur");
+  $(".content__burger").addClass("blur");
+}
+function closePopup_burbers() {
+  $(".content__width").removeClass("show");
+  $(".content__menu").removeClass("blur");
+  $(".content__line").removeClass("blur");
+  $(".content__footer").removeClass("blur");
+  $(".content__facebook").removeClass("blur");
+  $(".content__instagram").removeClass("blur");
+  $(".content__burger").removeClass("blur");
+  $(".content__main_title_price").removeClass("blur");
+  $(".content__button").removeClass("blur");
+}
+
+function popup_enter_andrii() {
+  $(".content__width").removeClass("show");
+  $(".content__data").addClass("show");
+  $(".content__barbersName").val("Андрій");
+}
+function popup_enter_tania() {
+  $(".content__width").removeClass("show");
+  $(".content__data").addClass("show");
+  $(".content__barbersName").val("Таня");
+}
+function popup_enter_ivan() {
+  $(".content__width").removeClass("show");
+  $(".content__data").addClass("show");
+  $(".content__barbersName").val("Іван");
+}
+
+function close_data() {
+  $(".content__data").removeClass("show");
+  $(".content__menu").removeClass("blur");
+  $(".content__line").removeClass("blur");
+  $(".content__footer").removeClass("blur");
+  $(".content__facebook").removeClass("blur");
+  $(".content__instagram").removeClass("blur");
+  $(".content__burger").removeClass("blur");
+  $(".content__main_title_price").removeClass("blur");
+  $(".content__button").removeClass("blur");
+}
+function close_popup() {
+  $(".content__data").removeClass("show");
+  $(".content__width").removeClass("show");
+  $(".content__popup").removeClass("show");
+  $(".content__menu").removeClass("blur");
+  $(".content__line").removeClass("blur");
+  $(".content__footer").removeClass("blur");
+  $(".content__facebook").removeClass("blur");
+  $(".content__instagram").removeClass("blur");
+  $(".content__burger").removeClass("blur");
+  $(".content__main_title_price").removeClass("blur");
+  $(".content__button").removeClass("blur");
+  $(".content__price").removeClass("blur");
+}
+
+function popup_pidtv() {
+  if (
+    $(".content__phone").val() !== "" &&
+    $(".content__time").val() !== "" &&
+    $(".content__date").val() !== "" &&
+    $(".content__firstName").val() !== "" &&
+    $(".content__secondName").val() !== ""
+  ) {
+    $(".content__data").removeClass("show");
+    $(".content__width").removeClass("show");
+    $(".content__popup").addClass("show");
+    $(".content__price").addClass("blur");
+    $(".content__burger").addClass("blur");
+  } else {
+    alert("Для успішного завершення запису - заповніть будь ласка всі поля!");
   }
-  function popup_enter_tania(){
-    $('.content__width').removeClass('show')
-    $('.content__data').addClass('show') 
-    $('.content__barbersName').val('Таня');
-  }
-  function popup_enter_ivan(){
-    $('.content__width').removeClass('show')
-    $('.content__data').addClass('show') 
-    $('.content__barbersName').val('Іван');
-  }
+}
 
-  function close_data() {
-    $('.content__data').removeClass('show') 
-    $('.content__menu').removeClass('blur') 
-    $('.content__line').removeClass('blur') 
-    $('.content__footer').removeClass('blur') 
-    $('.content__facebook').removeClass('blur') 
-    $('.content__instagram').removeClass('blur') 
-    $('.content__burger').removeClass('blur') 
-    $('.content__main_title_price').removeClass('blur') 
-    $('.content__button').removeClass('blur') 
-
-  }
-  function close_popup() {
-    $('.content__data').removeClass('show') 
-    $('.content__width').removeClass('show')
-    $('.content__popup').removeClass('show')
-    $('.content__menu').removeClass('blur') 
-    $('.content__line').removeClass('blur') 
-    $('.content__footer').removeClass('blur') 
-    $('.content__facebook').removeClass('blur') 
-    $('.content__instagram').removeClass('blur') 
-    $('.content__burger').removeClass('blur') 
-    $('.content__main_title_price').removeClass('blur') 
-    $('.content__button').removeClass('blur') 
-    $('.content__price').removeClass('blur') 
-  }
-
-
-
-  function popup_pidtv() {
-    if($('.content__phone').val()!=="" && $('.content__time').val()!=="" && $('.content__date').val()!=="" && $('.content__firstName').val()!=="" && $('.content__secondName').val()!==""){
-      $('.content__data').removeClass('show') 
-      $('.content__width').removeClass('show')
-      $('.content__popup').addClass('show') 
-      $('.content__price').addClass('blur') 
-      $('.content__burger').addClass('blur') 
-    } else{
-      alert("Для успішного завершення запису, заповніть будь-ласка усі поля!")
-    }
-  }
-
- 
-
-  Vue.component('burger__menuvue', {
-    template: `<div id="menu" class="burger__menu">
+Vue.component("burger__menuvue", {
+  template: `<div id="menu" class="burger__menu">
     <a href="../index.html"><div class="content__menu_items">головна</div></a>
     <a href="../pages/team_page.html"><div class="content__menu_items">про нас</div></a>
     <a href="../pages/services_page.html"><div class="content__menu_items">послуги</div></a>
@@ -192,18 +188,18 @@ $(".content__team").slick({
     <a href="../pages/price_page.html"><div class="content__menu_items">ціни</div></a>
     <a href="../pages/contacts_page.html"><div class="content__menu_items">контакти</div></a>
     </div>`
-  })
+});
 
-  Vue.component('popup_pidtv',{
-    template: `<div class="content__popup">
+Vue.component("popup_pidtv", {
+  template: `<div class="content__popup">
     <h1><img  class="content__close" src="../images/close.svg" alt="" onclick="close_popup()"></h1>
     <img class="content__radio" src="../images/hal.png" alt="">
     <div class="content__popupTitle">ваш запис прийнято, </br> дякуємо</div>
     </div>`
-  })
+});
 
-  Vue.component('popup_enter',{
-    template:`<div class="content__data">
+Vue.component("popup_enter", {
+  template: `<div class="content__data">
     <div class="content__calendar">
       <div class="content__left">
       <input class="content__main_calendar" type="date" атрибуты>
@@ -223,10 +219,10 @@ $(".content__team").slick({
         </div>
       </div>
     </div>`
-  })
+});
 
-  Vue.component('popup_barber',{
-    template:`
+Vue.component("popup_barber", {
+  template: `
     <div class="content__width">
         <h1 class="content__main_title">Оберіть барбера <img onclick="closePopup_burbers()" class="content__close" src="images/close.svg" alt=""></h1>
         <div class="content__team">
@@ -247,11 +243,10 @@ $(".content__team").slick({
             </div>
         </div>
     </div>`
-  })
+});
 
-
-  Vue.component('popup_main_menu',{
-  template:`
+Vue.component("popup_main_menu", {
+  template: `
   <div id="menu" class="burger__menu">
         <a href="index.html"><div class="content__menu_items1">головна</div></a>
         <a href="pages/team_page.html"><div class="content__menu_items1">про нас</div></a>
@@ -261,10 +256,9 @@ $(".content__team").slick({
         <a href="pages/price_page.html"><div class="content__menu_items1">ціни</div></a>
         <a href="pages/contacts_page.html"><div class="content__menu_items1">контакти</div></a>
     </div>`
-  })
+});
 
-  var app = new Vue({
-    el: '#app',
-    data: {
-    }
-  })
+var app = new Vue({
+  el: "#app",
+  data: {}
+});
