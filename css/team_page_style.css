@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #07111d;
   background-image: url(../images/wp.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -93,7 +94,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .content__main_title {
-    padding-top: 12%;
+    padding-top: 15%;
+    font-size: 30px;
   }
   .content__foto {
     margin-top: 27%;

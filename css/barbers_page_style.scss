@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #07111d;
   background-image: url(../images/wp.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -144,6 +145,9 @@ a {
       left: 12%;
       display: block;
     }
+    .content__main_title{
+      margin-top: 70px;
+    }
 }
 
 .show{
@@ -159,4 +163,13 @@ a {
 }
 .hiden{
   transform: scale(0);
+}
+
+.slick-next{
+  margin-top: 45px;
+  margin-right: -20px;
+}
+.slick-prev{
+  margin-top: 45px;
+margin-left: -20px;
 }

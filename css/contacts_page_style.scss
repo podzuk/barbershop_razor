@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #07111d;
     background-image: url(../images/wp.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -154,6 +155,25 @@ body {
         position: absolute;
         top: 2%;
         left: 7%;
+      }
+      @media screen and(max-width: 600px) {
+        &__text{
+          line-height: 1.3;
+          height: 30%;
+        }
+        &__map{
+          margin-top: 60px;
+          height: 60%;
+        }
+        &__main_title{
+          margin-top: 60px;
+        }
+        &__sub_title{
+          height: 35%;
+        }
+          &__network{
+           height: 35%;     
+          }
       }
   }
   @media screen and(max-width: 700px) {

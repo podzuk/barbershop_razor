@@ -56,7 +56,7 @@ body{
         color: white;
     }
     &__foto {
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: auto;
         margin-right: auto;
         width: 200px;
@@ -515,6 +515,9 @@ body{
 @media screen and(max-width: 600px) {
     .content{
         width: 100%; 
+    }
+    .content__footer{
+        bottom: 3px;
     }
 }
 @media screen and(max-width: 1000px) {
